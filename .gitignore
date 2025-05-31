@@ -1,0 +1,106 @@
+# General Gitingore for React Native Projects (place in your React_Native folder or a parent)
+
+# System files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE - VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-workspace
+
+# IDE - General
+.idea/
+*.iml
+*.ipr
+*.iws
+nbproject/
+*.sublime-workspace
+*.sublime-project
+
+# Log files
+*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Node.js
+node_modules/
+build/
+dist/
+coverage/
+.nyc_output/
+# Common build/output directories
+ios/build/
+android/build/
+android/app/build/
+android/.gradle/
+# Sometimes Hermes engine files are generated here
+android/app/src/main/jni/prebuilt/
+
+# React Native specific
+# iOS
+ios/Pods/
+# Android
+android/.idea/
+android/gradle.properties # Can contain sensitive information
+android/local.properties # Contains SDK path, specific to machine
+android/keystores/ # Never commit keystores
+*.jks
+*.keystore
+# Metro Bundler
+.metro-cache/
+# Watchman
+.watchmanconfig
+
+# Yarn
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.json
+.pnp.*
+
+# NPM
+package-lock.json # If you use yarn.lock or pnpm-lock.yaml, otherwise keep it
+# yarn.lock # If you use package-lock.json or pnpm-lock.yaml, otherwise keep it
+# pnpm-lock.yaml # If you use package-lock.json or yarn.lock, otherwise keep it
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Temporary files
+*.tmp
+*.temp
+*~
+# Crash reports
+# MacOS
+/Users/*/Library/Logs/DiagnosticReports/
+# Windows
+# C:\Users\*\AppData\Local\CrashDumps\
+
+# Hermes (sometimes these end up outside standard build folders)
+hermes_inspector_snapshot.*.heapsnapshot
+
+# Expo specific (if you use Expo)
+.expo/
+.expo-shared/
+dist/ # Expo web build output
+web-build/ # Expo web build output
+
+# EAS Build specific (if you use EAS Build)
+eas-build-pre-upload.tar.gz
