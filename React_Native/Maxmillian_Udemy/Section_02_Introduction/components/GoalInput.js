@@ -21,6 +21,8 @@ function GoalInput(props) {
     setCurrentGoal("");
   }
 
+  console.log("Goal input component is rendered.");
+
   return (
     <Modal visible={props.visible} animationType="slide">
       <View style={styles.inputContainer}>

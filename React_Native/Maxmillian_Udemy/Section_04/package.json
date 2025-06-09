@@ -1,5 +1,5 @@
 {
-  "name": "02_react_native_udemy_javascript",
+  "name": "section_04",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,12 +10,10 @@
   },
   "dependencies": {
     "expo": "~53.0.9",
+    "expo-linear-gradient": "^14.1.4",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
-    "react-native": "0.79.2",
-    "react-dom": "19.0.0",
-    "react-native-web": "^0.20.0",
-    "@expo/metro-runtime": "~5.0.4"
+    "react-native": "0.79.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
